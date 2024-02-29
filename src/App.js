@@ -1,6 +1,7 @@
 import "./App.css";
 import Dictionary from "./Dictionary.js";
 
+
 export default function App() {
   return (
     <div className="App">
@@ -10,8 +11,8 @@ export default function App() {
         <div className="App-footer">
           <footer>
             <small>
-              This project is coded by <a>Ariana Ledezma </a>and open-sourced on
-              <a>GitHub</a>.
+              This project is coded by <a href="/">Ariana Ledezma </a>and open-sourced on
+              <a href="/">GitHub</a>.
             </small>
           </footer>
         </div>

@@ -21,11 +21,13 @@ export default function Dictionary() {
     setKeyword(event.target.value);
   }
 
+  function updateDefinition() {}
+
   return (
     <div className="Dictionary">
       <form className="searchForm" onSubmit={search}>
         <input type="search" autoFocus={true} onChange={handleKeywordChange} />
-        <input type="submit" value="Search" />
+        <input type="submit" value="Search" onClick={updateDefinition} />
       </form>
     </div>
   );
