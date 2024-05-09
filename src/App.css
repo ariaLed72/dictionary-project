@@ -12,4 +12,6 @@
 
 .App {
   text-shadow: 1px 1px darkgray;
+  max-width: 960px;
+  margin: 0 auto;
 }
