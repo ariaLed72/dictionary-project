@@ -14,4 +14,14 @@ h2 {
   border-radius: 2%;
   text-align: center;
   margin: 12px;
+  box-shadow: 0 4px 6px rgb(155, 155, 155);
+  align-items: center;
+}
+
+.phonetics-container {
+  display: inline-flex;
+  white-space: nowrap;
+  text-align: center;
+  flex-direction: row;
+  margin: 5px 0;
 }

@@ -9,3 +9,7 @@
   text-align: center;
   margin: 30px 0;
 }
+
+.App {
+  text-shadow: 1px 1px darkgray;
+}

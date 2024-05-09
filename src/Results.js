@@ -8,15 +8,15 @@ export default function Results(props) {
     return (
       <div className="Results">
         <section>
-          <h2>{props.results.word}</h2>
-
-          {props.results.phonetics.map(function (phonetic, index) {
-            return (
-              <div key={index}>
-                <Phonetic phonetic={phonetic} />
-              </div>
-            );
-          })}
+          <div className="word-container">
+            <h2>{props.results.word}</h2>{" "}
+          </div>
+          <div className="phonetics-container">
+            {" "}
+            {props.results.phonetics.map(function (phonetic, index) {
+              return <Phonetic key={index} phonetic={phonetic} />;
+            })}
+          </div>
         </section>
 
         {props.results.meanings.map(function (meaning, index) {
