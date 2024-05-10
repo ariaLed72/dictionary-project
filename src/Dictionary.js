@@ -22,11 +22,10 @@ export default function Dictionary() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
 
-    let pexelsAPIKey =
-      "0RqDdVZtA25pbg7i7OyPd9U7nd6vn5NfECJulWA7PyXKpqpnhSC0SWAN";
-    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
-    let headers = { Authorization: `Bearer ${pexelsAPIKey}` };
-    axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
+    let photoApiKey = "42ba1b13f6cc540e038b0aeaao0t76f8";
+    let photoApiUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}}&key=${photoApiKey}&per_page=9`;
+    let headers = { Authorization: `Bearer ${photoApiKey}` };
+    axios.get(photoApiUrl, { headers: headers }).then(handlePexelsResponse);
   }
 
   function handleKeywordChange(event) {
